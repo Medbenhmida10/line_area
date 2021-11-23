@@ -206,7 +206,7 @@ var getScriptPromisify = (src) => {
       seriesD0.tooltipText = "DUMMY";
       seriesD0.hidden = true;
       seriesD0.hiddenInLegend = true;
-
+      chart.numberFormatter.numberFormat = "###,###,###,###.##";
       //Section1
         {
             for(var i = 0; i < _S1; i++) 
@@ -219,7 +219,7 @@ var getScriptPromisify = (src) => {
             series0.dataFields.dateX= "date";
             series0.xAxis = dateAxis1;
             series0.name = _KFName[i];
-            series0.tooltipText = "[bold] {date}[/] \n"+_Vrname[i]+"\n{name}: {valueY.formatNumber('###,###,###,###.##')} ";
+            series0.tooltipText = "[bold] {date}[/] \n"+_Vrname[i]+"\n{name}: {valueY.value} ";
             series0.tensionX = 0.9;
             series0.strokeWidth = 2.5;
             series0.defaultState.transitionDuration = 1500;
@@ -271,7 +271,7 @@ var getScriptPromisify = (src) => {
             seriesR0.data = chart.data;            
             seriesR0.dataFields.openValueY = "high"+i;
             seriesR0.dataFields.lowValueY = "low"+i;
-            seriesR0.tooltipText = "[bold] {date}[/] \n"+_Vrname[_S1+i]+"\n {name}: {valueY.formatNumber('###,###,###,###.##')} \n High: {openValueY} \n Low: {lowValueY}";
+            seriesR0.tooltipText = "[bold] {date}[/] \n"+_Vrname[_S1+i]+"\n {name}: {valueY.value} \n High: {openValueY} \n Low: {lowValueY}";
             seriesR0.tensionX = 0.9;
             seriesR0.strokeWidth = 2.5;
             seriesR0.defaultState.transitionDuration = 1500;
@@ -328,7 +328,7 @@ var getScriptPromisify = (src) => {
           seriesR1.data = chart.data;
           seriesR1.dataFields.openValueY = "high"+i;
           seriesR1.dataFields.lowValueY = "low"+i;
-          seriesR1.tooltipText = "[bold] {date}[/] \n "+_Vrname[_S1+i]+"\n {name}: {valueY.formatNumber('###,###,###,###.##')} \n High: {openValueY} \n Low: {lowValueY}";
+          seriesR1.tooltipText = "[bold] {date}[/] \n "+_Vrname[_S1+i]+"\n {name}: {valueY.value} \n High: {openValueY} \n Low: {lowValueY}";
           seriesR1.tensionX = 0.9;
           seriesR1.strokeWidth = 2.5;
           seriesR1.defaultState.transitionDuration = 1500;
@@ -385,7 +385,7 @@ var getScriptPromisify = (src) => {
     seriesR2.data = chart.data;
     seriesR2.dataFields.openValueY = "high"+i;
     seriesR2.dataFields.lowValueY = "low"+i;
-    seriesR2.tooltipText = "[bold] {date}[/] \n "+_Vrname[_S1+i]+"\n {name}: {valueY.formatNumber('###,###,###,###.##')} \n High: {openValueY} \n Low: {lowValueY}";
+    seriesR2.tooltipText = "[bold] {date}[/] \n "+_Vrname[_S1+i]+"\n {name}: {valueY.value} \n High: {openValueY} \n Low: {lowValueY}";
     seriesR2.tensionX = 0.9;
     seriesR2.strokeWidth = 2.5;
     seriesR2.defaultState.transitionDuration = 1500;
@@ -442,7 +442,7 @@ var getScriptPromisify = (src) => {
     seriesR3.data = chart.data;
     seriesR3.dataFields.openValueY = "high"+i;
     seriesR3.dataFields.lowValueY = "low"+i;
-    seriesR3.tooltipText = "[bold] {date}[/] \n "+_Vrname[_S1+i]+"\n  {name}: {valueY.formatNumber('###,###,###,###.##')} \n High: {openValueY} \n Low: {lowValueY}";
+    seriesR3.tooltipText = "[bold] {date}[/] \n "+_Vrname[_S1+i]+"\n  {name}: {valueY.value} \n High: {openValueY} \n Low: {lowValueY}";
     seriesR3.tensionX = 0.9;
     seriesR3.strokeWidth = 2.5;
     seriesR3.defaultState.transitionDuration = 1500;
